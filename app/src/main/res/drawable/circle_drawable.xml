@@ -1,0 +1,10 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="#d164f8" /> <!-- Color de relleno del círculo (blanco en este caso) -->
+    <stroke
+        android:width="2dp"/>
+    <solid android:color="#ded0f0" />
+    <size
+        android:width="50dp"
+        android:height="50dp" />
+</shape>

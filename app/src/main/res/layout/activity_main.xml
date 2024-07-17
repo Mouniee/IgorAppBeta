@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/TextView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#54d69e"
+    android:padding="16dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="16dp"
+        app:cardBackgroundColor="#e1f8d8"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="395dp"
+            android:layout_height="495dp">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="190dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="32dp"
+                android:src="@drawable/logo_igor" />
+
+            <ImageView
+                android:id="@+id/imageView_username"
+                android:layout_width="26dp"
+                android:layout_height="31dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="225dp"
+                app:srcCompat="@drawable/email" />
+
+            <EditText
+                android:id="@+id/edit_text_username"
+                android:layout_width="296dp"
+                android:layout_height="48dp"
+                android:layout_below="@id/logo"
+                android:layout_toEndOf="@id/imageView_username"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="50dp"
+                android:hint="Correo electronico"
+                android:visibility="visible"
+                android:inputType="textEmailAddress"/>
+
+            <ImageView
+                android:id="@+id/imageView_password"
+                android:layout_width="24dp"
+                android:layout_height="29dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="299dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="167dp"
+                android:src="@drawable/lock" />
+
+            <TextView
+                android:id="@+id/Register_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="162dp"
+                android:layout_marginTop="451dp"
+                android:text="Registrarse" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="202dp"
+                android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="97dp"
+                android:layout_marginTop="186dp"
+                android:layout_marginEnd="96dp"
+                android:layout_marginBottom="281dp"
+                android:text="Bienvenido(a) a IGOR"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edit_text_password"
+                android:layout_width="296dp"
+                android:layout_height="48dp"
+                android:layout_below="@+id/edit_text_username"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:hint="Contraseña"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/button_login"
+                android:layout_width="245dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="77dp"
+                android:layout_marginEnd="73dp"
+                android:layout_marginBottom="74dp"
+                android:text="Ingresar" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

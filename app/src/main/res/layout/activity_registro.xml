@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#35CE8E"
+    tools:context=".Registro">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#54d69e"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="202dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="185dp"
+            android:layout_height="116dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="120dp"
+            android:layout_marginEnd="120dp"
+            android:layout_marginBottom="32dp"
+            android:src="@drawable/logo_igor" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="16dp"
+            app:cardBackgroundColor="#FFFF"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="507dp">
+
+                <EditText
+                    android:id="@+id/edit_text_username"
+                    android:layout_width="296dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="43dp"
+                    android:layout_marginTop="72dp"
+                    android:hint="Nombre y apellido"
+                    android:textColor="#000000"
+                    android:textColorLink="#000000" />
+
+                <EditText
+                    android:id="@+id/edit_text_fnacimiento"
+                    android:layout_width="296dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edit_text_username"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="43dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="Fecha de nacimiento"
+                    android:inputType="date"
+                    android:focusable="false"
+                    android:textColor="@android:color/black"/>
+
+                <EditText
+                    android:id="@+id/edit_text_mail"
+                    android:layout_width="296dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edit_text_fnacimiento"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="44dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="Correo electrónico" />
+
+                <EditText
+                    android:id="@+id/edit_text_password"
+                    android:layout_width="296dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edit_text_mail"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="43dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="Contraseña"
+                    android:inputType="textPassword" />
+
+                <EditText
+                    android:id="@+id/edit_text_password2"
+                    android:layout_width="296dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edit_text_password"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="43dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="Repetir contraseña"
+                    android:inputType="textPassword" />
+
+                <Button
+                    android:id="@+id/button_accepted"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edit_text_password2"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="58dp"
+                    android:layout_marginTop="31dp"
+                    android:layout_marginEnd="59dp"
+                    android:background="@color/black"
+                    android:text="Registrar"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/volverLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/button_accepted"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="Volver "
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/salEmotion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="59dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="110dp"
+                    android:layout_marginEnd="111dp"
+                    android:gravity="center"
+                    android:text="Registro"
+                    android:textSize="24sp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

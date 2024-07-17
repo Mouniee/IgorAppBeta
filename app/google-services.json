@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "873813760028",
+    "project_id": "igorapp-2b855",
+    "storage_bucket": "igorapp-2b855.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873813760028:android:02589b8c20a0eab35d67d9",
+        "android_client_info": {
+          "package_name": "com.example.igorapp1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjQaTYXS1_jQx8WvZjgJXConYtMGxCkA8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
